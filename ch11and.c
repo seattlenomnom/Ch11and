@@ -13,7 +13,8 @@
 
 /* defines */
 
-
+#include <stdio.h>
+#include <stdlib.h>
 
 
 
@@ -33,6 +34,10 @@
 
 int main(int argc, char *argv[]){
 
+    if( argc != 3){
+        printf("usage ch11and operand1 operand2\n");
+        exit(0);
+    }
 
 
 
