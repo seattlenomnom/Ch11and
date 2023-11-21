@@ -38,6 +38,9 @@ int main(int argc, char *argv[]){
 
     size_t len1, len2;
     char ch1, ch2;
+    unsigned short number = 10;
+    unsigned long n1, n2;
+    char *ptr;
 
     if( argc != 3){
         printf("usage ch11and operand1 operand2\n");
@@ -62,7 +65,10 @@ int main(int argc, char *argv[]){
 
 
 
+    n1 = strtoul(argv[1], &ptr, 16);
+    n2 = strtoul(argv[2], &ptr, 16);
 
+    printf("hex1 & hex2 is %x\n", (n1 & n2));
 
 
 

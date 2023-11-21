@@ -14,5 +14,8 @@ How do I turn the string a\0 to the char a?
 
 11/20/2023
 turn operand1[0] and operand2[0] into chars, put into char vars.
-turn char1 and char2 into hex numbers.
+
+turn char1 and char2 into hex numbers. Turn chars into hex versus
+turning a string of length one into a hex number.
+
 logical and the hex numbers.
