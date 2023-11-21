@@ -37,6 +37,7 @@
 int main(int argc, char *argv[]){
 
     size_t len1, len2;
+    char ch1, ch2;
 
     if( argc != 3){
         printf("usage ch11and operand1 operand2\n");
@@ -50,6 +51,16 @@ int main(int argc, char *argv[]){
         printf("usage: ch11and onedigit onedigit\n");
         exit(0);
     }
+
+    ch1 = argv[1][0];
+    ch2 = argv[2][0];
+
+    if(!(isxdigit(ch1) && isxdigit(ch2))) {
+        printf("not hex digits\n");
+        exit(0);
+    }
+
+
 
 
 
